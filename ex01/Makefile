@@ -6,7 +6,7 @@
 #    By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/02 15:53:52 by eguelin           #+#    #+#              #
-#    Updated: 2023/12/02 18:08:09 by eguelin          ###   ########lyon.fr    #
+#    Updated: 2023/12/02 19:12:40 by eguelin          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,8 @@ FULL_CLEAN_MSG	= "$(PURPLE)Full cleaning $(NAME) $(DEFAULT)done on $(YELLOW)$(sh
 #                                    Sources                                   #
 # **************************************************************************** #
 
-CLS_FILES	= Bureaucrat.cpp
+CLS_FILES	= Bureaucrat.cpp \
+			  Form.cpp
 
 ALL_FILES	= $(addprefix $(CLS_DIR), $(CLS_FILES))
 
