@@ -6,7 +6,7 @@
 /*   By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 13:31:11 by eguelin           #+#    #+#             */
-/*   Updated: 2023/12/04 13:36:41 by eguelin          ###   ########lyon.fr   */
+/*   Updated: 2023/12/04 15:50:53 by eguelin          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 /*                         Constructors & Destructors                         */
 /* ************************************************************************** */
 
-PresidentialPardonForm::PresidentialPardonForm( void ): AForm( "PresidentialPardonForm", 25, 5), _target("default")
+PresidentialPardonForm::PresidentialPardonForm( void ): AForm( "presidential pardon", 25, 5), _target("default")
 {
 	std::cout << BLUE_T << "PresidentialPardonForm default constructor called" << DEFAULT_T << std::endl;
 }
 
-PresidentialPardonForm::PresidentialPardonForm( const std::string &target ): AForm( "PresidentialPardonForm", 25, 5), _target(target)
+PresidentialPardonForm::PresidentialPardonForm( const std::string &target ): AForm( "presidential pardon", 25, 5), _target(target)
 {
 	std::cout << BLUE_T << "PresidentialPardonForm constructor called" << DEFAULT_T << std::endl;
 }
 
-PresidentialPardonForm::PresidentialPardonForm( const PresidentialPardonForm &src ): AForm( "PresidentialPardonForm", 25, 5)
+PresidentialPardonForm::PresidentialPardonForm( const PresidentialPardonForm &src ): AForm( "presidential pardon", 25, 5)
 {
 	std::cout << BLUE_T << "PresidentialPardonForm copy constructor called" << DEFAULT_T << std::endl;
 

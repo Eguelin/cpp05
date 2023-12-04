@@ -6,7 +6,7 @@
 /*   By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 13:29:36 by eguelin           #+#    #+#             */
-/*   Updated: 2023/12/04 13:35:11 by eguelin          ###   ########lyon.fr   */
+/*   Updated: 2023/12/04 15:51:08 by eguelin          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 /*                         Constructors & Destructors                         */
 /* ************************************************************************** */
 
-RobotomyRequestForm::RobotomyRequestForm( void ): AForm( "RobotomyRequestForm", 72, 45), _target("default")
+RobotomyRequestForm::RobotomyRequestForm( void ): AForm( "robotomy request", 72, 45), _target("default")
 {
 	std::cout << BLUE_T << "RobotomyRequestForm default constructor called" << DEFAULT_T << std::endl;
 }
 
-RobotomyRequestForm::RobotomyRequestForm( const std::string &target ): AForm( "RobotomyRequestForm", 72, 45), _target(target)
+RobotomyRequestForm::RobotomyRequestForm( const std::string &target ): AForm( "robotomy request", 72, 45), _target(target)
 {
 	std::cout << BLUE_T << "RobotomyRequestForm constructor called" << DEFAULT_T << std::endl;
 }
 
-RobotomyRequestForm::RobotomyRequestForm( const RobotomyRequestForm &src ): AForm( "RobotomyRequestForm", 72, 45)
+RobotomyRequestForm::RobotomyRequestForm( const RobotomyRequestForm &src ): AForm( "robotomy request", 72, 45)
 {
 	std::cout << BLUE_T << "RobotomyRequestForm copy constructor called" << DEFAULT_T << std::endl;
 

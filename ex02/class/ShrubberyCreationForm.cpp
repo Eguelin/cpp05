@@ -6,7 +6,7 @@
 /*   By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 13:29:18 by eguelin           #+#    #+#             */
-/*   Updated: 2023/12/04 13:36:21 by eguelin          ###   ########lyon.fr   */
+/*   Updated: 2023/12/04 15:51:28 by eguelin          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 /*                         Constructors & Destructors                         */
 /* ************************************************************************** */
 
-ShrubberyCreationForm::ShrubberyCreationForm( void ): AForm( "ShrubberyCreationForm", 145, 137), _target("default")
+ShrubberyCreationForm::ShrubberyCreationForm( void ): AForm( "shrubbery creation", 145, 137), _target("default")
 {
 	std::cout << BLUE_T << "ShrubberyCreationForm default constructor called" << DEFAULT_T << std::endl;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm( const std::string &target ): AForm( "ShrubberyCreationForm", 145, 137), _target(target)
+ShrubberyCreationForm::ShrubberyCreationForm( const std::string &target ): AForm( "shrubbery creation", 145, 137), _target(target)
 {
 	std::cout << BLUE_T << "ShrubberyCreationForm constructor called" << DEFAULT_T << std::endl;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm( const ShrubberyCreationForm &src ): AForm( "ShrubberyCreationForm", 145, 137)
+ShrubberyCreationForm::ShrubberyCreationForm( const ShrubberyCreationForm &src ): AForm( "shrubbery creation", 145, 137)
 {
 	std::cout << BLUE_T << "ShrubberyCreationForm copy constructor called" << DEFAULT_T << std::endl;
 
