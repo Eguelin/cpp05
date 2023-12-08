@@ -6,7 +6,7 @@
 /*   By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 13:29:36 by eguelin           #+#    #+#             */
-/*   Updated: 2023/12/04 14:57:21 by eguelin          ###   ########lyon.fr   */
+/*   Updated: 2023/12/07 16:06:17 by eguelin          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "AForm.hpp"
 # include <cstdlib>
-# include <ctime>
+# include <sys/time.h>
 
 # define BLUE_T "\033[34m"
 # define PURPLE_T "\033[35m"

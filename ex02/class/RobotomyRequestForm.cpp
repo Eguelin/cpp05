@@ -6,7 +6,7 @@
 /*   By: eguelin <eguelin@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 13:29:36 by eguelin           #+#    #+#             */
-/*   Updated: 2023/12/04 15:51:08 by eguelin          ###   ########lyon.fr   */
+/*   Updated: 2023/12/08 13:41:33 by eguelin          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,23 +64,26 @@ const std::string	&RobotomyRequestForm::getTarget( void ) const {return (this->_
 
 void	RobotomyRequestForm::execute(Bureaucrat const &executor) const
 {
+	timeval currentTime;
+
 	if (!this->getSigned())
 		throw (FormIsNotSigned());
 	else if (executor.getGrade() > this->getGradeForExecute())
 		throw (GradeTooLowException());
 
-	std::srand(std::time(NULL));
+	gettimeofday(&currentTime, NULL);
+	std::srand(currentTime.tv_usec);
 	if (std::rand() & 1)
 	{
-		std::cout << "Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv, ";
-		std::cout << "I am pleased to inform you that " << this->_target << " has been successfully robotized.";
-		std::cout << std::endl;
+		std::cout << "Vvvvvvvvvvvvvvv, ";
+		std::cout << "I am pleased to inform you that " << this->_target;
+		std::cout << " has been successfully robotized." << std::endl;
 	}
 	else
 	{
-		std::cout << "Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv, ";
-		std::cout << "I regret to inform you that " << this->_target << "'s robotomy has failed.";
-		std::cout << std::endl;
+		std::cout << "Vvvvvvvvvvvvvvv, ";
+		std::cout << "I regret to inform you that " << this->_target;
+		std::cout << "'s robotomy has failed." << std::endl;
 	}
 }
 
